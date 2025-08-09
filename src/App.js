@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import ProductCard from './components/ProductCard';
+import './App.css'
+import logo from './assets/imag2.jpg';
+import NavBar from './components/NavBar'
 
-function App() {
+function App(){
+  const products=[
+    {name:'redmi',url:logo,price:20},
+    {name:'samsung',url:logo,price:20},
+    {name:'nokia',url:logo,price:20},
+    {name:'poco',url:logo,price:20},
+    {name:'iphone',url:logo,price:20},
+    {name:'sparx',url:logo,price:20},
+    {name:'ball',url:logo,price:20},
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <NavBar/>
+
+    <div className='app'>
+    <h1>Products Display</h1>
+    <div className="products">
+      {
+        products.map((product,index)=>{
+          return <ProductCard
+          key={index}
+          price={product.price}
+          name={product.name}
+          url={product.url}
+          />
+        })
+      }
     </div>
+
+    </div>
+    </>
   );
 }
 

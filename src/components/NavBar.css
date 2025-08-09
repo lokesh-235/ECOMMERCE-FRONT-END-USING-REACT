@@ -1,0 +1,47 @@
+
+nav{
+     /* background-color: blue; */
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+nav ul a:not(:hover){
+    background-color: rgb(226, 226, 233);
+    transition: 1s ease-in-out;
+    color: black;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.searchBar{
+    height: 30px;
+    width: 200px;
+    border: 2px solid red;
+}
+
+.searchBtn{
+    background-color: red;
+    
+}
