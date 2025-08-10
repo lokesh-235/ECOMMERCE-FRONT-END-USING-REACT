@@ -1,7 +1,7 @@
-import ProductCard from './components/ProductCard';
+import ProductCard from './components/productCard/ProductCard';
 import './App.css'
 import logo from './assets/imag2.jpg';
-import NavBar from './components/NavBar'
+import NavBar from './components/navbar/NavBar'
 
 function App(){
   const products=[

@@ -45,3 +45,17 @@ nav ul a:not(:hover){
     background-color: red;
     
 }
+
+@media(max-width:600px){
+    nav ul li{
+        display: none;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+    .searchBar{
+        width: 70vw;
+        text-align: center;
+    }
+}
